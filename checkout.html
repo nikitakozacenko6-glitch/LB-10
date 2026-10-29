@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreadHouse - Оформлення замовлення</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/forms.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">BreadHouse</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#catalog">Каталог</a></li>
+                    <li><a href="checkout.html">Оформлення замовлення</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                </ul>
+            </nav>
+            <div class="cart-link">
+                <a href="checkout.html">Кошик (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-main">
+        <div class="container">
+            <h2 class="page-title">Оформлення замовлення</h2>
+            
+            <form class="checkout-form" action="#" method="POST">
+                <fieldset class="form-section">
+                    <legend>1. Особисті дані</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">ПІБ:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Іванов Іван Іванович" required minlength="3">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+380991234567" pattern="^\+380\d{9}$" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend>2. Спосіб доставки</legend>
+                    
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="delivery" value="novaposhta" checked> Нова Пошта
+                        </label>
+                        <label>
+                            <input type="radio" name="delivery" value="courier"> Кур'єр за адресою
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Місто:</label>
+                        <select id="city" name="city">
+                            <option value="kyiv">Київ</option>
+                            <option value="kharkiv">Харків</option>
+                            <option value="odesa">Одеса</option>
+                            <option value="Lviv">Львів</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Підтвердити замовлення</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 BreadHouse. Усі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

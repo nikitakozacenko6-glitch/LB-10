@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreadHouse - Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">BreadHouse</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="checkout.html">Оформлення замовлення</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                </ul>
+            </nav>
+            <div class="cart-link">
+                <a href="checkout.html">Кошик (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h2>Свіжа випічка щодня з доставкою додому</h2>
+            <p>Спробуйте наші хрусткі багети, ніжні круасани та запашний хліб, приготовані з найкращих інгредієнтів.</p>
+        </section>
+
+        <section id="catalog" class="container catalog-section">
+            <h2 class="section-title">Наш каталог випічки</h2>
+            
+            <div class="catalog-grid">
+                <!-- Товар 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=600&auto=format&fit=crop" alt="Французький багет">
+                    </div>
+                    <div class="product-info">
+                        <h3>Французький багет</h3>
+                        <p class="product-desc">Хрустка золотава скоринка та неймовірно м'який м'якуш всередині.</p>
+                        <div class="product-footer">
+                            <span class="price">45 грн</span>
+                            <button class="buy-btn">У кошик</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&auto=format&fit=crop" alt="Масляний круасан">
+                    </div>
+                    <div class="product-info">
+                        <h3>Масляний круасан</h3>
+                        <p class="product-desc">Класичний французький круасан із вершковим маслом та листковим тістом.</p>
+                        <div class="product-footer">
+                            <span class="price">55 грн</span>
+                            <button class="buy-btn">У кошик</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&auto=format&fit=crop" alt="Житній хліб">
+                    </div>
+                    <div class="product-info">
+                        <h3>Житній хліб на заквасці</h3>
+                        <p class="product-desc">Корисний домашній хліб на натуральній заквасці з додаванням насіння.</p>
+                        <div class="product-footer">
+                            <span class="price">60 грн</span>
+                            <button class="buy-btn">У кошик</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600&auto=format&fit=crop" alt="Синнабон з корицею">
+                    </div>
+                    <div class="product-info">
+                        <h3>Булочка з корицею</h3>
+                        <p class="product-desc">Ароматна випічка з корицею, вкрита ніжним вершковим глазуруванням.</p>
+                        <div class="product-footer">
+                            <span class="price">65 грн</span>
+                            <button class="buy-btn">У кошик</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=600&auto=format&fit=crop" alt="Шоколадний мафін">
+                    </div>
+                    <div class="product-info">
+                        <h3>Шоколадний мафін</h3>
+                        <p class="product-desc">Насичений шоколадний кекс із шматочками натурального чорного шоколаду.</p>
+                        <div class="product-footer">
+                            <span class="price">50 грн</span>
+                            <button class="buy-btn">У кошик</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 6 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?w=600&auto=format&fit=crop" alt="Вишневий пиріг">
+                    </div>
+                    <div class="product-info">
+                        <h3>Вишневий пиріг</h3>
+                        <p class="product-desc">Традиційний відкритий пиріг із соковитою начинкою зі стиглої вишні.</p>
+                        <div class="product-footer">
+                            <span class="price">120 грн</span>
+                            <button class="buy-btn">У кошик</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 BreadHouse. Усі права захищені.</p>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
